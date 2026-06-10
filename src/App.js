@@ -7,7 +7,7 @@ import Brands from "./Brands";
 import CheckCarEligibility from "./CheckCarEligibility";
 import CarEligibilityResult from "./CarEligibilityResult";
 import { useState } from "react";
-import axios from "axios";
+//import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   const submitData = async (e) => {
       e.preventDefault();
-      const url = 'http://localhost:5000';
+      //const url = 'http://localhost:5000';
       const vehicleData = {
         carBrand,
         manufactureYear,
