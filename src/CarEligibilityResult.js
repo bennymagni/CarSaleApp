@@ -5,10 +5,10 @@ import sadguy from './assets/sadguy.jpg'
 const CarEligibilityResult = () => {
 
     const location = useLocation();
-    const { isToyota } = location.state
+    const { carOk } = location.state
     return (
         <div className="CarEligibilityResult">
-            {isToyota ? 
+            {carOk ? 
             <div className='happyguy'>
                 <img src={happyguy} alt={happyguy.split('/').pop().split('.')[0]} width='632' height='421'/>
                 <h1>Yay!!, Your car meets our requirement, you can now bring it down for final inspection</h1>
