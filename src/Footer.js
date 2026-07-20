@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <>
+        <div className="footerWrapper">
             <div className="footer">
                 <section>
                     <h1>About Us</h1>
@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="footerfinal">
                 <p>Developed By Prestige Institute Of Technology &copy; Copyright 2026</p>
             </div>
-        </>
+        </div>
     )
 }
 

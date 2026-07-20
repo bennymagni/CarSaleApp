@@ -1,21 +1,22 @@
 import { useLocation } from 'react-router-dom'
-import happyguy from './assets/happpyguy.png'
-import sadguy from './assets/sadguy.jpg'
+import { FaCircleCheck } from 'react-icons/fa6'
+import { FaTimesCircle } from 'react-icons/fa'
+import PDFDownload from './PDFDownload';
 
 const CarEligibilityResult = () => {
 
     const location = useLocation();
-    const { carOk } = location.state
+    const { carOk, userID, fullName, phoneNumber } = location.state
+    const userData = {fullName, phoneNumber, userID}
     return (
-        <div className="CarEligibilityResult">
+        <div className="CarEligibilityResult" style={{margin:'20rem 0'}}>
             {carOk ? 
             <div className='happyguy'>
-                <img src={happyguy} alt={happyguy.split('/').pop().split('.')[0]} width='632' height='421'/>
-                <h1>Yay!!, Your car meets our requirement, you can now bring it down for final inspection</h1>
+                <h1><FaCircleCheck style={{color: '#00FF00'}}/> Your car meets our <span>requirement</span>, you can now bring it down for final inspection. Your approval id is <span>{userID}</span></h1>
+                <PDFDownload userData={userData} />
             </div> :
             <div className='sadguy'>
-                <img src={sadguy} alt={sadguy.split('/').pop().split('.')[0]} width='307' height='410'/>
-                <h1>Unfortunately, your car <span>doesn't</span> meet our requirements. We cannot proceed further at this point</h1>
+                <h1><FaTimesCircle style={{color: '#FF0000'}}/> Unfortunately, your car <span>doesn't</span> meet our requirements. We cannot proceed further at this point</h1>
             </div>}
         </div>
     )

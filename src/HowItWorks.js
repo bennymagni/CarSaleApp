@@ -1,4 +1,4 @@
-import hiwImage from './assets/hiwImage.png'
+import hiwImage from './assets/hiwImage1.png'
 import { Link } from 'react-router-dom'
 
 const HowItWorks = () =>{
@@ -18,8 +18,7 @@ const HowItWorks = () =>{
                     </div>
                     <div className='hiwText'>
                         <h1>Receive Feedback</h1>
-                        <p>If your Car meets our requirement, bring it to our office<br />and claim your cash! 
-                           If it requires further inspection, we'll <br />inform you.
+                        <p>If your Car meets our requirement, bring it to our office<br /> along with your approval Form/code and claim your cash!<br /> 
                            If it fails to meet our standards, unfortunately, <br />we can't accept it, 
                            however you're welcome to try with another car</p>
                     </div>

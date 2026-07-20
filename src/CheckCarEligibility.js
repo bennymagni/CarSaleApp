@@ -1,13 +1,22 @@
 
 const CheckCarEligibility = ({ carBrand, setCarBrand, manufactureYear, setManufactureYear, 
     mileage, setMileage, submitData, model, setModel, registrationYear, setRegistrationYear,
-    engineCapacity, setEngineCapacity, hiddenFaults, setHiddenFaults, faultDescription, setFaultDescription }) => {
+    engineCapacity, setEngineCapacity, hiddenFaults, setHiddenFaults, faultDescription, setFaultDescription,
+    file, setFile, fileRef, fullName, setFullName, phoneNumber, setPhoneNumber, isSubmitting, setIsSubmitting }) => {
 
     return (
         <div className="formWrapper">
             <form method="post" className="form" id="userDataForm" onSubmit={submitData}>
                 <fieldset className="fieldset">
                     <legend>Vehicle Information</legend>
+                    <div className="fullNameWrapper">
+                        <label htmlFor="fullName" className="fullNameLabel">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="e.g John Owusu" value={fullName} required onChange={(e) => setFullName(e.target.value)}></input>
+                    </div>
+                    <div className="phoneNumberWrapper">
+                        <label htmlFor="phoneNumber" className="phoneNumberLabel">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="e.g 0241234567" value={phoneNumber} required onChange={(e) => setPhoneNumber(e.target.value)}></input>
+                    </div>
                     <div className="carBrandWrapper">
                         <label htmlFor="carBrand" className="carBrandLabel">Car Brand</label>
                         <input type="text" name="carBrand" id="carBrand" placeholder="e.g Toyota" value={carBrand} required onChange={(e) => setCarBrand(e.target.value)}></input>
@@ -41,9 +50,14 @@ const CheckCarEligibility = ({ carBrand, setCarBrand, manufactureYear, setManufa
                         <label htmlFor="faultDescription" className="faultDescriptionLabel">If yes, briefly describe fault</label>
                         <input type="text" name="faultDescription" value={faultDescription} id="faultDescription" onChange={(e) => setFaultDescription(e.target.value)}></input> 
                     </div>
+                    <div className="addImageWrapper">
+                        <label htmlFor="addImage">Upload Car Image</label>
+                        <input type="file" id="addImage" name='addImage' ref={fileRef} onChange={(e) => setFile(e.target.files[0])}/>
+                    </div>
                 </fieldset>
             </form>
-            <button type="submit" className="cceButton" form="userDataForm">Submit</button>
+            <button type="submit" className="cceButton" form="userDataForm"  disabled={isSubmitting}>{isSubmitting ? 'Saving Data...' : 'Submit'}</button>
+           
         </div>
     )
 }

@@ -1,6 +1,6 @@
-import wcu1 from './assets/WCU1.png'
+import wcu1 from './assets/WCU5.png'
+import wcu3 from './assets/WCU6.png'
 import wcu2 from './assets/WCU2.png'
-import wcu3 from './assets/WCU3.png'
 
 const WhyChooseUs = () => {
     return (

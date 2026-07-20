@@ -1,9 +1,9 @@
-import img1 from './assets/IMG_9426.JPG.jpeg'
-import img2 from './assets/IMG_9428.JPG.jpeg'
-import img3 from './assets/IMG_9429.JPG.jpeg'
-import img4 from './assets/IMG_9430.JPG.jpeg'
-import img6 from './assets/IMG_9432.JPG.jpeg'
-import img7 from './assets/IMG_9433.JPG.jpeg'
+import img1 from './assets/carimg1.jpg'
+import img2 from './assets/happyface3.png'
+import img3 from './assets/carimg3.png'
+import img4 from './assets/happyface4.png'
+import img6 from './assets/carimg2.jpg'
+import img7 from './assets/carimg4.avif'
 const HappyFaces = () => {
 
     const imgArray = [img1, img6, img2, img4, img7, img3]
