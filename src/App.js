@@ -49,7 +49,7 @@ function App() {
 
   const getCarVehicleData = async () => {
     try {
-      const result = await axios.get('https://vercel.com/bennymagnis-projects/car-sale-app-backend/userdata');
+      const result = await axios.get('https://car-sale-app-backend.vercel.app//userdata');
       setCarData(result.data)
     } catch (error) {
       console.log(error);
@@ -60,7 +60,7 @@ function App() {
   const submitData = async (e) => {
       e.preventDefault();
       setIsSubmitting(true);
-      const url = 'https://vercel.com/bennymagnis-projects/car-sale-app-backend/userdata';
+      const url = 'https://car-sale-app-backend.vercel.app//userdata';
       if (!file) return alert('You need to upload a file');
 
       const payload = new FormData();
@@ -155,7 +155,7 @@ function App() {
     payload.append('imageUploaded', file)
 
     try {
-      const response = await axios.post('https://vercel.com/bennymagnis-projects/car-sale-app-backend/uploadImage', payload);
+      const response = await axios.post('https://car-sale-app-backend.vercel.app/uploadImage', payload);
       console.log("Success: ", response.data);
       setFile(null);
       fileRef.current.value = '';
