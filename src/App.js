@@ -49,7 +49,7 @@ function App() {
 
   const getCarVehicleData = async () => {
     try {
-      const result = await axios.get('https://car-sale-app-backend.vercel.app//userdata');
+      const result = await axios.get('https://car-sale-app-backend.vercel.app/userdata');
       setCarData(result.data)
     } catch (error) {
       console.log(error);
@@ -60,7 +60,7 @@ function App() {
   const submitData = async (e) => {
       e.preventDefault();
       setIsSubmitting(true);
-      const url = 'https://car-sale-app-backend.vercel.app//userdata';
+      const url = 'https://car-sale-app-backend.vercel.app/userdata';
       if (!file) return alert('You need to upload a file');
 
       const payload = new FormData();
