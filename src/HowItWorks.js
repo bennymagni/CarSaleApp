@@ -6,7 +6,7 @@ const HowItWorks = () =>{
         <section className="howItWorks">
             <h1>How It <span>Works?</span></h1>
             <div className='hiwTextImage'>
-                <img src={hiwImage} alt="nice guy buying car" width='431' height='600'/>
+                <img src={hiwImage} alt="nice guy buying car" style={{width:'26.9375rem'}}/>
                 <div className='hiwTParent'>
                     <div className='hiwText'>
                         <h1>Take Eligibility Test</h1>

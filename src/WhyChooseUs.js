@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
         <div className="whyChooseUs">
             <h1>Why <span>Choose</span> Us</h1>
             <div className="wcuti">
-                <img src={wcu1} alt="Quick Cash" width='700' className='wcuimage'/>
+                <img src={wcu1} alt="Quick Cash" className='wcuimage' style={{width:'30.75rem'}}/>
                 <div className='wculine'></div>
                 <div className='wcutext'>
                     <h1>Quick <span>Cash</span></h1>
@@ -15,17 +15,17 @@ const WhyChooseUs = () => {
                     Get paid the same day you bring your car.</p>
                 </div>
             </div>
-            <div className="wcuti">
+            <div className="wcuti wcutimobile">
                 <div className='wcutext'>
                     <h1>Buy <span>Back</span> Guarantee</h1>
                     <p>Having second thoughts after selling, don't fuss<br />
                     You can take back your vehicle up to three months after selling.<br /> T & C applied</p>
                 </div>
                 <div className='wculine wculine2'></div>
-                <img src={wcu2} alt="Quick Cash" width='600' className='wcuimage2'/>
+                <img src={wcu2} alt="Quick Cash" style={{width:'30.75rem'}} className='wcuimage2'/>
             </div>
             <div className="wcuti">
-                <img src={wcu3} alt="Quick Cash" width='700' className='wcuimage'/>
+                <img src={wcu3} alt="Quick Cash" style={{width:'30.75rem'}} className='wcuimage'/>
                 <div className='wculine'></div>
                 <div className='wcutext'>
                     <h1>Unbeatable <span>Offer</span></h1>

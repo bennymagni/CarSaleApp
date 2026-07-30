@@ -27,6 +27,7 @@ function App() {
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const fileRef = useRef(null)
   
   const approvedCars = ['toyota', 'hyundai', 'honda', 'kia']
@@ -55,6 +56,10 @@ function App() {
       console.log(error);
     }
 
+  }
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   }
 
   const submitData = async (e) => {
@@ -166,7 +171,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} toggleMenu={toggleMenu}/>
       {<Routes>
         <Route path="userdata" element={<DisplayDataMain carData={carData} />}></Route>
         <Route path="/getuserdata" element={<DisplayData userData={carData}/>}></Route>

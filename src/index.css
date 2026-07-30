@@ -15,6 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(0, 0, 0);
   color: aliceblue;
+  width: 100%;
 }
 
 code {
@@ -22,7 +23,7 @@ code {
     monospace;
 }
 
-.header{
+.headerDesktop{
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -33,6 +34,7 @@ code {
   background: black;
   z-index: 50;
 }
+
 
 ul{
   display: flex;
@@ -105,8 +107,8 @@ li{
 }*/
 
 .hero{
-  height: 50vh;
-  width: 70vw;
+  height: auto;
+  width: 70%;
   background: purple;
   border-radius: 10px;
   margin: 9rem auto 5rem;
@@ -158,7 +160,7 @@ li{
   display: flex;
   justify-content: center;
   max-width: 90vw;
-  height: 90vh;
+  height: auto;
   background: rgb(28, 27, 27);
   flex-wrap: wrap;
   margin-top: 2rem;
@@ -191,6 +193,7 @@ li{
   background: #151414;
   padding: 1rem;
   border-radius: 12px;
+  width:'20rem';
 }
 
 .hiwText:hover{
@@ -276,7 +279,6 @@ li{
 
 .testimonycontainer{
   display: flex;
-
 }
 
 .testimony2{
@@ -298,7 +300,6 @@ li{
 .footer p{
   width: 10rem;
   text-align: justify;
-  
 }
 
 .footer ul{
@@ -406,6 +407,7 @@ img{
   transform: scale(1);
   transition: transform 2s ease-in-out;
 }
+
 img:hover{
   transform: scale(1.2);
 }
@@ -456,4 +458,114 @@ img:hover{
   margin-bottom: 20rem;
 }
 
+.hamburgerMenu{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  body{
+    width: 100%;
+  }
+
+  .hero{
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .bigScreenView{
+    display: none;
+  }
+  
+  .hamburgerMenu{
+    display: block;
+  }
+
+  .headerMobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #800080;
+    position: absolute;
+    top: 60px;
+    width: 80%;
+    height: 100%;
+    z-index: 50;
+  }
+
+  .hiwTextImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hiwText{
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .wcuti{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+  }
+
+  .wcutimobile{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .wcuimage{
+    margin: 0;
+    padding: 0;
+  }
+
+  .wculine{
+    border-bottom-width: 0.1rem;
+    border-bottom-style: solid;
+    border-color: #713599;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+
+  .wcutext{
+    display: grid;
+    align-content: center;
+    text-align: center;
+  }
+
+  .wculine2{
+    border-color: #fff;
+    margin-right: 0;
+  }
+
+  .wcuimage2{
+    border-radius: 12px;
+    margin: 1.5rem auto;
+  }
+
+  .testimonycontainer, .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer{
+    padding-bottom: 1rem;
+  }
+
+  .footer section{
+    margin-bottom: 5rem;
+    width: 15rem;
+  }
+
+  .footer li{
+    padding-left: 0;
+  }
+
+}
 
