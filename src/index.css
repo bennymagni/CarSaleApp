@@ -115,6 +115,7 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .hero h1,p{
@@ -182,6 +183,7 @@ li{
 .hiwTextImage{
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -193,7 +195,7 @@ li{
   background: #151414;
   padding: 1rem;
   border-radius: 12px;
-  width:'20rem';
+  width:29rem;
 }
 
 .hiwText:hover{
@@ -215,6 +217,7 @@ li{
 
 .wcuti{
   display: flex;
+  justify-content: center;
   width: 90vw;
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -241,11 +244,12 @@ li{
 .wculine2{
   border-color: #fff;
   margin-right: 0;
+  padding: 2rem;
 }
 
 .wcuimage2{
   border-radius: 12px;
-  margin: 1.5rem auto;
+  margin: 1.5rem;
 }
 
 .testimonial{
@@ -321,7 +325,7 @@ li{
   margin: 6rem auto;
   margin-top: 6rem;
   width: 70vw;
-  height: 170vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,11 +471,11 @@ img:hover{
 
   body{
     width: 100%;
+    font-size: .8rem;
   }
 
   .hero{
-    height: auto;
-    padding-bottom: 2rem;
+    text-align: center;
   }
 
   .bigScreenView{
@@ -503,6 +507,11 @@ img:hover{
   .hiwText{
     margin-top: 2rem;
     margin-left: 0;
+    width: 20rem;
+  }
+
+  .hiwImage{
+    width: 22rem !important;
   }
 
   .wcuti{
@@ -521,6 +530,7 @@ img:hover{
   .wcuimage{
     margin: 0;
     padding: 0;
+    width: 22rem !important;
   }
 
   .wculine{
@@ -529,7 +539,7 @@ img:hover{
     border-color: #713599;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    width: 25rem;
+    width: 22rem;
   }
 
   .wcutext{
@@ -540,12 +550,19 @@ img:hover{
 
   .wculine2{
     border-color: #fff;
-    margin-right: 0;
+    width: 22rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding: 0;
   }
 
   .wcuimage2{
     border-radius: 12px;
     margin: 1.5rem auto;
+    margin-top: 0.8rem;
+    width: 22rem !important;
   }
 
   .testimonycontainer, .footer{
@@ -554,7 +571,13 @@ img:hover{
     align-items: center;
   }
 
+  .testimony{
+    margin-right: 0;
+  }
+
   .footer{
+    padding: 0;
+    padding-top: 2.5rem;
     padding-bottom: 1rem;
   }
 
@@ -565,6 +588,25 @@ img:hover{
 
   .footer li{
     padding-left: 0;
+  }
+
+  .formWrapper{
+    width: 85%;
+  }
+
+  input{
+    margin-left: 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .about, .brands{
+    width: 22rem;
+  }
+
+  .brands p{
+    text-align: center;
   }
 
 }
