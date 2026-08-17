@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Jost', 'Roboto', 'Oxygen',
@@ -466,6 +470,10 @@ img:hover{
   display: none;
 }
 
+.mobileButton{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -601,12 +609,43 @@ img:hover{
     font-size: 1rem;
   }
 
+  .file{
+    display: none;
+  }
+
+  .mobileButton{
+  display: inline-block;
+}
+
+  
+  legend{
+    margin-left: 5rem;
+  }
+
   .about, .brands{
     width: 22rem;
   }
 
   .brands p{
     text-align: center;
+  }
+
+  img:hover{
+    transform: none;
+  }
+
+  .footerfinal{
+    padding-bottom: 1rem;
+  }
+
+  .CarEligibilityResult{
+    margin: 0 !important;
+    margin-top: 4rem !important;
+    width: auto;
+  }
+
+  .happyguy, .sadguy{
+    width: 24rem;
   }
 
 }

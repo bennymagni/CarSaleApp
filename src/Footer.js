@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footerfinal">
-                <p>Developed By Prestige Institute Of Technology &copy; Copyright 2026</p>
+                <p>Developed By Benny Benson &copy; Copyright 2026</p>
             </div>
         </div>
     )

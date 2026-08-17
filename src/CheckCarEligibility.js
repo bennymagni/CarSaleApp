@@ -52,7 +52,8 @@ const CheckCarEligibility = ({ carBrand, setCarBrand, manufactureYear, setManufa
                     </div>
                     <div className="addImageWrapper">
                         <label htmlFor="addImage">Upload Car Image</label>
-                        <input type="file" id="addImage" name='addImage' ref={fileRef} onChange={(e) => setFile(e.target.files[0])}/>
+                        <label htmlFor="addImage" className="mobileButton" style={{background:'white', color:'black', paddingLeft:'.5rem', borderRadius:'12px'}}>Choose File</label>
+                        <input className="file" type="file" id="addImage" name='addImage' ref={fileRef} onChange={(e) => setFile(e.target.files[0])}/>
                     </div>
                 </fieldset>
             </form>
